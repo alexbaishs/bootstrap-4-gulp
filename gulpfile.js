@@ -38,7 +38,7 @@ gulp.task('styles', function() {
 		grid: true,
 		overrideBrowserslist: ['last 10 versions']
 	}))
-	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Optional. Comment out when debugging
+	//.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Optional. Comment out when debugging
 	.pipe(gulp.dest('build/css'))
 	.pipe(browserSync.stream())
 });
@@ -50,7 +50,7 @@ gulp.task('scripts', function() {
 		'src/js/*.js',
 		])
 	.pipe(concat('scripts.min.js'))
-	.pipe(uglify()) // Minify js (opt.)
+	//.pipe(uglify()) // Minify js (opt.)
 	.pipe(gulp.dest('build/js'))
 	.pipe(browserSync.reload({ stream: true }))
 });
