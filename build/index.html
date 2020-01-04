@@ -11,13 +11,12 @@
 
 	<link rel="icon" href="img/favicon.png">
 	<meta property="og:image" content="img/@1x/preview.jpg">
-
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 	<link rel="stylesheet" href="css/styles.min.css">
-
 </head>
 
 <body>
-	<div class="container">
+	<div class="container fixed-top ">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-black">
 			<a class="navbar-brand color-accent" href="/">BODYLINE</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
@@ -35,27 +34,134 @@
 					<li class="nav-item">
 						<a class="nav-link" href="#entry">Записаться</a>
 					</li>
-					
+
 				</ul>
 				<a href="tel:+79241673575">+7 (924) 167-35-75</a>
 			</div>
 		</nav>
 	</div>
-	<section class="header bg-white h-100">
+	<section id="header" class="header h-100">
 		<div class="container h-100">
 			<div class="row align-items-center h-100">
 				<div class="col-12 col-md-7">
-					<script id="a5204ac6777b181fd04ad14024e8ef24c5765934" src="https://online.bodyline14.ru/pl/lite/widget/script?id=150360"></script>
+					<script id="a5204ac6777b181fd04ad14024e8ef24c5765934"
+						src="https://online.bodyline14.ru/pl/lite/widget/script?id=150360"></script>
 				</div>
 				<div class="col-12 col-md-5 text-center">
 					<img class="img-fluid w-90" src="/img/@1x/main-ariadna.png" alt="">
 				</div>
 			</div>
-			
+
 		</div>
 	</section>
-
+	<section id="results">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col text-center">
+					<h1>Результаты</h1>
+				</div>
+			</div>
+			<div class="row swiper-container swiper2">
+				<div class="swiper-wrapper text-center">
+					<div class="swiper-slide">
+						<img class="img-fluid" src="/img/@1x/result-1.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img class="img-fluid" src="/img/@1x/result-2.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img class="img-fluid" src="/img/@1x/result-3.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img class="img-fluid" src="/img/@1x/result-4.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img class="img-fluid" src="/img/@1x/result-5.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img class="img-fluid" src="/img/@1x/result-6.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img class="img-fluid" src="/img/@1x/result-7.jpg" alt="">
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-scrollbar"></div>
+			</div>
+		</div>
+	</section>
+	<section class="bg-accent text-black">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<h1>Что тебя ждёт?</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col col-md-4">
+					<h3>Готовое меню правильного питания</h3>
+					<p>Научим самостоятельно считать суточную норму калорий и выбирать полезные продукты.</p>
+				</div>
+				<div class="col col-md-4">
+					1
+				</div>
+				<div class="col col-md-4">
+					1
+				</div>
+				<div class="col col-md-4">
+					1
+				</div>
+				<div class="col col-md-4">
+					1
+				</div>
+				<div class="col col-md-4">
+					1
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col text-center">
+					<h1>Отзывы</h1>
+				</div>
+			</div>
+			<div class="row swiper-container swiper3">
+				<div class="swiper-wrapper text-center">
+					<div class="swiper-slide">
+						<img class="img-fluid" src="/img/@1x/review-1.png" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img class="img-fluid" src="/img/@1x/review-2.png" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img class="img-fluid" src="/img/@1x/review-3.png" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img class="img-fluid" src="/img/@1x/review-4.png" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img class="img-fluid" src="/img/@1x/review-5.png" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img class="img-fluid" src="/img/@1x/review-6.png" alt="">
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-scrollbar"></div>
+			</div>
+		</div>
+	</section>
+	<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<script src="js/scripts.min.js"></script>
 </body>
-
 </html>

@@ -46,8 +46,10 @@ gulp.task('styles', function() {
 // Scripts & JS Libraries
 gulp.task('scripts', function() {
 	return gulp.src([
-		// 'node_modules/jquery/dist/jquery.min.js', // Optional jQuery plug-in (npm i --save-dev jquery)
-		'src/js/*.js',
+		//'node_modules/jquery/dist/jquery.min.js', // Optional jQuery plug-in (npm i --save-dev jquery)
+		//"node_modules/tiny-slider/src/tiny-slider.js",
+		'src/js/_libs.js', // JS libraries (all in one)
+		'src/js/_custom.js', // Custom scripts. Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
 	//.pipe(uglify()) // Minify js (opt.)
@@ -96,8 +98,8 @@ gulp.task('code', function() {
 gulp.task('rsync', function() {
 	return gulp.src('build/')
 	.pipe(rsync({
-		root: 'app/',
-		hostname: 'username@yousite.com',
+		root: 'build/',
+		hostname: 'bodyline.loc',
 		destination: 'yousite/public_html/',
 		// include: ['*.htaccess'], // Included files
 		exclude: ['**/Thumbs.db', '**/*.DS_Store'], // Excluded files
