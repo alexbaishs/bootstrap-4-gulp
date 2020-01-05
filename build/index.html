@@ -5,68 +5,170 @@
 
 	<meta charset="utf-8">
 	<title>BODYLINE</title>
-	<meta name="description" content="Startup HTML template OptimizedHTML 5">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	<link rel="icon" href="img/favicon.png">
-	<meta property="og:image" content="img/@1x/preview.jpg">
+	<meta name="theme-color" content="#000000">
+	<link rel="icon" href="img/@1x/favicon.png">
+	<link rel="icon" sizes="144x144" href="favicon-android.png">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap&subset=cyrillic"
 		rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.min.css">
 </head>
 
-<body>
+<body data-spy="scroll">
 	<div id="navbar" class="fixed-top b-navbar">
 		<nav class="container navbar navbar-expand-lg navbar-dark">
-			
+			<a href="/">
+				<img style="max-height: 42px;" src="/img/b-logo.svg" alt="">
+			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
 				aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<a href="/">
-				<img style="max-height: 42px;" src="/img/b-logo.svg" alt="">
-			</a>
+
 			<div class="collapse navbar-collapse" id="navbarText">
 				<ul class="navbar-nav mr-auto ml-auto">
 					<li class="nav-item">
+						<a class="nav-link" href="#info">ЧТО ТЕБЯ ЖДЁТ?</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#courses">ТРЕНИРОВКИ</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link" href="#results">РЕЗУЛЬТАТЫ</span></a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#about">ЧТО ТЕБЯ ЖДЁТ?</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#entry">ЗАПИСАТЬСЯ</a>
-					</li>
-
 				</ul>
+				<a type="button" class="btn btn-accent" href="https://online.bodyline14.ru">
+					<ion-icon name="person"></ion-icon> ЛИЧНЫЙ КАБИНЕТ
+				</a>
 			</div>
-			<button type="button" class="btn btn-accent" data-toggle="modal" data-target="#exampleModal">ЗАПИСАТЬСЯ</button>
+
 		</nav>
 	</div>
 	<section id="header" class="b-header header h-100">
 		<div class="container h-100">
 			<div class="row align-items-center h-100">
-				<div class="col-12 col-md-7">
-					<button type="button" class="btn btn-accent" data-toggle="modal" data-target="#exampleModal">ЗАПИСАТЬСЯ</button>
+				<div class="col-12 col-md-5">
+					<h1 class="display-3">ЯНВАРСКИЙ ЖИРОТОП</h1>
+					<p class="">Команда BodyLine уже на протяжении 4 лет подряд занимается преображением прекрасного
+						пола.</p>
+					<a href="#courses" type="button" class="btn btn-accent mb-3">ВЫБРАТЬ ТРЕНИРОВКИ</a>
 				</div>
-				<div class="col-12 col-md-5 text-center">
-					<img class="img-fluid w-90" src="/img/@1x/main-ariadna.png" alt="">
+				<div class="col-12 col-md-6 offset-md-1 text-center">
+					<img class="img-fluid" src="/img/@1x/main-result.jpg" alt="">
 				</div>
 			</div>
 
 		</div>
 	</section>
-	<section id="results">
-		<div class="container-fluid">
+	<section id="info" class="">
+		<div class="container">
 			<div class="row">
 				<div class="col text-center">
-					<h1>Результаты</h1>
+					<h2 class="b-heading">ЧТО ТЕБЯ ЖДЁТ?</h2>
 				</div>
 			</div>
-			<div class="row swiper-container swiper2">
-				<div class="swiper-wrapper text-center">
+			<div class="row b-video">
+				<div class="col-lg-8 offset-lg-2">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PPpOK_G6A2Y?rel=0"  allowfullscreen></iframe>
+					  </div>
+				</div>
+			</div>
+			<div class="row">
+
+				<div class="col-12 col-lg-4 col-md-6 b-info-left">
+					<div class="b-feature">
+						<ion-icon name="restaurant"></ion-icon>
+						<h4>Готовое меню правильного питания</h4>
+						<p class="b-description">Научим самостоятельно считать суточную норму калорий и выбирать
+							полезные
+							продукты.</p>
+					</div>
+					<div class="b-feature">
+						<ion-icon name="ios-fitness"></ion-icon>
+						<h4>Жиросжигающие тренировки в домашних условиях</h4>
+						<p class="b-description">Тренируйся вместе с тренерами нашей команды.</p>
+					</div>
+					<div class="b-feature">
+						<ion-icon name="logo-whatsapp"></ion-icon>
+						<h4>Чат мотивации в WhatsApp</h4>
+						<p class="b-description">Куратор будет отвечать на все ваши вопросы. И также будем все
+							поддерживать
+							друг друга во время курса.</p class="b-description">
+					</div>
+				</div>
+
+				<div class="col-md-4 d-none d-lg-block">
+					<img src="/img/@2x/ariadna1.jpg" class="img-fluid">
+				</div>
+				<div class="col-12 col-lg-4 col-md-6 b-info-right">
+					<div class="b-feature">
+						<ion-icon name="bookmarks"></ion-icon>
+						<h4>База рецептов</h4>
+						<p class="b-description">Более 500 готовых рецептов, который полюбиться многим.</p
+							class="b-description">
+					</div>
+					<div class="b-feature">
+						<ion-icon name="ios-rocket"></ion-icon>
+						<h4>Мотивационные задания</h4>
+						<p class="b-description">Наша команда подготовила психологические и мотивационные задания,
+							чтобы ты
+							переборола свой барьер сначала в голове.</p>
+					</div>
+					<div class="b-feature">
+						<ion-icon name="gift"></ion-icon>
+						<h4>Похудей и получи деньги</h4>
+						<p class="b-description">У тебя есть возможность не только преобразиться за это время, но и
+							шанс
+							выиграть денежный приз за самый лучший результат.</p class="b-description">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="courses" class="bg-accent text-black">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<h2 class="b-heading">ТРЕНИРОВКИ</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 offset-lg-4">
+					<div class="card b-card">
+						<div class="card-header text-center">
+							<h4 class="my-0 font-weight-normal">ЯНВАРСКИЙ ЖИРОТОП</h4>
+						</div>
+						<img src="img/@1x/jirotop.jpg" class="card-img-top">
+						<div class="card-body text-center">
+							<h1 class="card-title pricing-card-title">2 300 ₽
+								<small class="text-muted">/ 21 дней</small></h1>
+
+							<ul class="list-unstyled mt-3 mb-4">
+								<li>Все, что перечислено выше</li>
+								<li>2 тренера от <span class="b-oswald">BODYLINE</span></li>
+								<li>Похудей и выиграй 10 000 ₽</li>
+							</ul>
+							<button type="button" class="btn btn-accent" data-toggle="modal"
+								data-target="#exampleModal">ЗАПИСАТЬСЯ</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<section id="results" class="">
+		<div class="">
+			<div class="row">
+				<div class="col text-center">
+					<h2 class="b-heading">РЕЗУЛЬТАТЫ</h2>
+				</div>
+			</div>
+			<div class="row swiper-container no-gutters swiper2">
+				<div class="col swiper-wrapper text-center">
 					<div class="swiper-slide">
 						<img class="img-fluid" src="/img/@1x/result-1.jpg" alt="">
 					</div>
@@ -96,48 +198,17 @@
 			</div>
 		</div>
 	</section>
-	<section class="bg-accent text-black">
-		<div class="container">
-			<div class="row">
-				<div class="col text-center">
-					<h1>Что тебя ждёт?</h1>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col col-md-4">
-					<h3>Готовое меню правильного питания</h3>
-					<p>Научим самостоятельно считать суточную норму калорий и выбирать полезные продукты.</p>
-				</div>
-				<div class="col col-md-4">
-					1
-				</div>
-				<div class="col col-md-4">
-					1
-				</div>
-				<div class="col col-md-4">
-					1
-				</div>
-				<div class="col col-md-4">
-					1
-				</div>
-				<div class="col col-md-4">
-					1
-				</div>
-
-			</div>
-		</div>
-	</section>
 	<section>
-		<div class="container-fluid">
+		<div class="">
 			<div class="row">
 				<div class="col text-center">
-					<h1>Отзывы</h1>
+					<h2 class="b-heading">ОТЗЫВЫ УЧАСТНИЦ</h2>
 				</div>
 			</div>
-			<div class="row swiper-container swiper3">
-				<div class="swiper-wrapper text-center">
+			<div class="row no-gutters swiper-container swiper3">
+				<div class="col swiper-wrapper text-center">
 					<div class="swiper-slide">
-						<img class="img-fluid" src="/img/@1x/review-1.png" alt="">
+						<img class="img-fluid" src="/img/@1x/review-4.png" alt="">
 					</div>
 					<div class="swiper-slide">
 						<img class="img-fluid" src="/img/@1x/review-2.png" alt="">
@@ -146,7 +217,7 @@
 						<img class="img-fluid" src="/img/@1x/review-3.png" alt="">
 					</div>
 					<div class="swiper-slide">
-						<img class="img-fluid" src="/img/@1x/review-4.png" alt="">
+						<img class="img-fluid" src="/img/@1x/review-1.png" alt="">
 					</div>
 					<div class="swiper-slide">
 						<img class="img-fluid" src="/img/@1x/review-5.png" alt="">
@@ -165,15 +236,12 @@
 	<!-- Modal -->
 	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
 		aria-hidden="true">
-		<div class="modal-dialog" role="document">
+		<div class="modal-dialog modal-lg" role="document">
 			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+				<div class="modal-body">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
-				</div>
-				<div class="modal-body">
 					<script id="a5204ac6777b181fd04ad14024e8ef24c5765934"
 						src="https://online.bodyline14.ru/pl/lite/widget/script?id=150360"></script>
 				</div>
@@ -190,6 +258,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
 		crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 	<script src="js/scripts.min.js"></script>
 </body>
 

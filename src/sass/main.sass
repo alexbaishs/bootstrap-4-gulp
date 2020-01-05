@@ -1,7 +1,8 @@
 @import vars
 @import fonts
 @import libs
-
+html
+	scroll-behavior: smooth
 body
 	background-color: $black
 	font-size: 16px
@@ -31,8 +32,8 @@ a
 	.swiper-slide
 		background-position: center
 		background-size: cover
-		width: 500px
-		height: 500px
+		width: 450px
+		height: 450px
 .swiper-pagination-bullet
 	background: #fff
 	
@@ -42,7 +43,7 @@ section
 	padding-top: 50px
 	padding-bottom: 50px
 .b-navbar
-	background: rgba(0, 0, 0, 0.7)
+	background: rgba(0, 0, 0, 1)
 	backdrop-filter: blur(7px)
 	font-family: 'Oswald', sans-serif
 	&::before
@@ -50,6 +51,45 @@ section
 		height: 100%
 		position: absolute
 .b-header
-	background-color: #fff
+	//background-color: #fff
 	padding-top: 110px
-	
+button
+	font-family: 'Oswald', sans-serif
+h1, h2, h3, h4, h5, h6, .b-heading,	
+	font-family: 'Oswald', sans-serif
+.b-heading
+	padding-bottom: 50px
+.b-description
+    color: rgba(255, 255, 255, 0.5)
+.b-feature
+	margin-bottom: 50px
+	h4
+		//color: $accent
+	ion-icon
+		font-size: 56px
+		color: $accent
+.btn-accent
+	font-family: 'Oswald', sans-serif
+	font-weight: 500
+.b-card
+	background-color: #000000
+	color: #fff
+	.list-group-item:first-child
+		border-top-width: 1px
+
+	.list-group-item
+		background-color: #000
+		border-color: rgba(255, 255, 255, 0.225)
+.btn-accent
+	padding: 0.375rem 1.2rem
+.b-oswald
+	font-family: 'Oswald', sans-serif
+	color: $accent
+@media (min-width: 992px)
+	.b-info-left
+		text-align: right
+@media (max-width: 992px)
+	.b-info-left, .b-info-right
+		text-align: center
+.b-video
+	padding-bottom: 70px
