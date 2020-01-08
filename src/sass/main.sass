@@ -71,7 +71,9 @@ h1, h2, h3, h4, h5, h6, .b-heading,
 .btn-accent
 	font-family: 'Oswald', sans-serif
 	font-weight: 500
-.b-card
+	color: $black
+.card
+	border-color: rgba(255,255,255,.125)
 	background-color: #000000
 	color: #fff
 	.list-group-item:first-child
@@ -80,6 +82,9 @@ h1, h2, h3, h4, h5, h6, .b-heading,
 	.list-group-item
 		background-color: #000
 		border-color: rgba(255, 255, 255, 0.225)
+	.card-footer, .card-header
+		border-color: rgba(255,255,255,.125)
+
 .btn-accent
 	padding: 0.375rem 1.2rem
 .b-oswald
@@ -93,3 +98,17 @@ h1, h2, h3, h4, h5, h6, .b-heading,
 		text-align: center
 .b-video
 	padding-bottom: 70px
+.b-countdown
+	.b-cd-block
+		min-width: 65px
+		display: inline-block
+		border: 1px solid $accent
+		border-radius: .5rem
+		padding: .5rem
+		margin: .1rem
+		p, h4
+			margin-bottom: 0px
+		p
+			font-size: 12px
+.b-oldprice
+	margin-bottom: 0px

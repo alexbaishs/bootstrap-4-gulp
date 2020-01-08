@@ -13,46 +13,82 @@
 	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap&subset=cyrillic"
 		rel="stylesheet">
-	<link rel="stylesheet" href="css/styles.min.css">
+	<link rel="stylesheet" href="css/styles.min.css?v=1.1">
 </head>
 
 <body data-spy="scroll">
 	<div id="navbar" class="fixed-top b-navbar">
-		<nav class="container navbar navbar-expand-lg navbar-dark">
-			<a href="/">
-				<img style="max-height: 42px;" src="/img/b-logo.svg" alt="">
-			</a>
+		<nav class="container-fluid navbar navbar-expand-lg navbar-dark">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
 				aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-
+			<a href="/">
+				<img style="max-height: 42px;" src="/img/b-logo.svg" alt="">
+			</a>
+			
 			<div class="collapse navbar-collapse" id="navbarText">
 				<ul class="navbar-nav mr-auto ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#header">ГЛАВНАЯ</a>
+					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#info">ЧТО ТЕБЯ ЖДЁТ?</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#courses">ТРЕНИРОВКИ</a>
+						<a class="nav-link" href="#courses">ЗАПИСАТЬСЯ</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#results">РЕЗУЛЬТАТЫ</span></a>
 					</li>
-				</ul>
-				<a type="button" class="btn btn-accent" href="https://online.bodyline14.ru">
-					<ion-icon name="person"></ion-icon> ЛИЧНЫЙ КАБИНЕТ
-				</a>
-			</div>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">О НАС</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#faq">ОТВЕТЫ НА ВОПРОСЫ</span></a>
+					</li>
 
+					<li class="nav-item">
+						<a class="nav-link" target="_blank" href="https://online.bodyline14.ru">ЛИЧНЫЙ КАБИНЕТ </a>
+					</li>
+				</ul>
+			</div>
+			<div class=""><button type="button" class="btn btn-accent" data-toggle="modal"
+				data-target="#exampleModal">ЗАПИСАТЬСЯ</button>
+			</div>
 		</nav>
 	</div>
 	<section id="header" class="b-header header h-100">
 		<div class="container h-100">
 			<div class="row align-items-center h-100">
-				<div class="col-12 col-md-5">
+				<div class="col-12 col-md-5 text-center">
 					<h1 class="display-4">ЯНВАРСКИЙ ЖИРОТОП</h1>
 					<p class="">Авторский курс онлайн похудения от команды BodyLine</p>
-					<a href="#courses" type="button" class="btn btn-accent mb-3">ВЫБРАТЬ ТРЕНИРОВКИ</a>
+					<p>Осталось только 8 мест, успей запрыгнуть в уходящий поезд совместного похудения.</p>
+					<div class="text-center mb-3">
+						<p class="text-muted mb-1">
+							До конца акции осталось:
+						</p>
+						<div class="b-countdown mb-2">
+							<div class="b-cd-block">
+								<h4 class="b-day">0</h4>
+								<p>дней</p>
+							</div>
+							<div class="b-cd-block">
+								<h4 class="b-hour">0</h4>
+								<p>часов</p>
+							</div>
+							<div class="b-cd-block">
+								<h4 class="b-min">0</h4>
+								<p>минут</p>
+							</div>
+							<div class="b-cd-block">
+								<h4 class="b-sec">0</h4>
+								<p>секунд</p>
+							</div>
+						</div>
+					</div>
+					<a href="#courses" type="button" class="btn btn-accent mb-3">ЗАПИСАТЬСЯ</a>
 				</div>
 				<div class="col-12 col-md-6 offset-md-1 text-center">
 					<img class="img-fluid" src="/img/@1x/main-result.jpg" alt="">
@@ -71,8 +107,9 @@
 			<div class="row b-video">
 				<div class="col-lg-8 offset-lg-2">
 					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PPpOK_G6A2Y?rel=0"  allowfullscreen></iframe>
-					  </div>
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PPpOK_G6A2Y?rel=0"
+							allowfullscreen></iframe>
+					</div>
 				</div>
 			</div>
 			<div class="row">
@@ -131,7 +168,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col text-center">
-					<h2 class="b-heading">ТРЕНИРОВКИ</h2>
+					<h2 class="b-heading">ЗАПИСАТЬСЯ</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -141,8 +178,9 @@
 							<h4 class="my-0 font-weight-normal">ЯНВАРСКИЙ ЖИРОТОП</h4>
 						</div>
 						<img src="img/@1x/jirotop.jpg" class="card-img-top">
-						<div class="card-body text-center">
-							<h1 class="card-title pricing-card-title">2 300 ₽
+						<div class="card-body">
+							<h4 class="text-danger b-oldprice"><s>&nbsp;3 500 ₽&nbsp;</s></h4>
+							<h1 class="">2 600 ₽
 								<small class="text-muted">/ 21 дней</small></h1>
 
 							<ul class="list-unstyled mt-3 mb-4">
@@ -152,6 +190,29 @@
 							</ul>
 							<button type="button" class="btn btn-accent" data-toggle="modal"
 								data-target="#exampleModal">ЗАПИСАТЬСЯ</button>
+						</div>
+						<div class="card-footer text-center">
+							<p class="text-muted mb-1">
+								До конца акции осталось:
+							</p>
+							<div data-countdown="2020/1/13 6:00:00" class="b-countdown mb-2">
+								<div class="b-cd-block">
+									<h4 class="b-day">0</h4>
+									<p>дней</p>
+								</div>
+								<div class="b-cd-block">
+									<h4 class="b-hour">0</h4>
+									<p>часов</p>
+								</div>
+								<div class="b-cd-block">
+									<h4 class="b-min">0</h4>
+									<p>минут</p>
+								</div>
+								<div class="b-cd-block">
+									<h4 class="b-sec">0</h4>
+									<p>секунд</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -232,6 +293,63 @@
 			</div>
 		</div>
 	</section>
+	<section id="about" class="">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<h2 class="b-heading">О НАС</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">Наша команда BODYLINE работает с 2015 года. Мы разработали СОБСТВЕННУЮ МЕТОДИКУ
+					ТРЕНИРОВОК «BODYLINE», с которым каждый человек cможет похудеть от 5 до 10 кг за месяц!
+					<br>На сегодняшний день это сеть фитнес центров, который имеет 7 филиалов. В течении месяца наши
+					филиалы посещают более 1000 девушек и женщин.
+					<br>И нам начали писать многие девушки, которые живут в других городах, мамы у которых нет
+					возможности ходить в зал, девушки у которых нет времени, но горят желанием похудеть и начать
+					тренироваться, но не знают с чего начать! ⠀
+					<br>Тогда мы решили создать ОНЛАЙН ПРОЕКТ, который будет понятным и доступным всем! ОНЛАЙН курс, где
+					девушки в течении 3-ех недель будут получать каждый день план питания, тренировки на жиросжигание,
+					мотивационные задания, тренера - наставника, который будет контролировать тебя 24/7,
+					единомышленники, которые пройдут с тобой путь трансформации. ⠀
+					<br>Сейчас наши курсы прошли уже более 3000 девушек, которые получили РЕАЛЬНЫЕ РЕЗУЛЬТАТЫ за 3
+					недели МИНУС 5-10 КГ !!! Хочешь так же? Меняйся вместе с нами!</div>
+			</div>
+		</div>
+	</section>
+	<section id="faq" class="">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<h2 class="b-heading">ОТВЕТЫ НА ВОПРОСЫ</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">1. Мне надо будет заниматься в какое-то определенное время в течении дня?
+					<br>- Нет. Вы сами выбираете удобное для себя время.
+					<br>2. Я живу не в России, я могу заниматься?
+					<br>- Да. Курс доступен в любой точке мира. Вам понадобится смартфон, планшет или компьютер с
+					доступом в интернет.
+					<br>3. Какой инвентарь понадобиться для домашних тренировок?
+					<br>- Больше всего мы будем использовать то, что имеется у нас под рукой: бутылки для воды, стул и
+					т.д. Но если у вас имеется спортивный инвентарь, то это приветствуется.
+					<br>4. Я жду ребёнка. Могу ли я принять участие?
+					<br>- Нет, мы беспокоимся о вашем здоровье и здоровье вашего малыша. Но ждём вас через полгода.
+					<br>5. Всем ли подойдут тренировки?
+					<br>- Да, если у вас нет особенных противопоказаний от врача. Если у вас есть какие-то ограничения,
+					то задайте нам ваш вопрос и мы вас проконсультируем.</div>
+			</div>
+		</div>
+	</section>
+	<section id="faq" class="">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<a href="#courses" type="button" class="btn btn-accent mb-3">ЗАПИСАТЬСЯ</a>
+				</div>
+			</div>
+		</div>
+	</section>
 	<!-- Modal -->
 	<div class="modal fade text-black" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
 		aria-hidden="true">
@@ -243,7 +361,7 @@
 					</button>
 					<script id="a5204ac6777b181fd04ad14024e8ef24c5765934"
 						src="https://online.bodyline14.ru/pl/lite/widget/script?id=150360"></script>
-					
+
 				</div>
 			</div>
 		</div>
@@ -259,7 +377,7 @@
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
 		crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-	<script src="js/scripts.min.js"></script>
+	<script src="js/scripts.min.js?v=1.1"></script>
 </body>
 
 </html>

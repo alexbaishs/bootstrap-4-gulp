@@ -57,4 +57,11 @@ var swiper3 = new Swiper('.swiper3', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-})
+});
+$('.b-countdown').countdown('2020/1/13 6:00:00', function(event) {
+
+    $('.b-day').html(event.strftime('%-D'));
+    $('.b-hour').html(event.strftime('%-H'));
+    $('.b-min').html(event.strftime('%-M'));
+    $('.b-sec').html(event.strftime('%-S'));
+});
